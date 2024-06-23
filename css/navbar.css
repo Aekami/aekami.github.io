@@ -1,0 +1,63 @@
+.navBar {
+    background-color: #f1f1f1 ;
+    border: lightgrey solid 2px;
+    font-family: Impact, fantasy, "Times New Roman", Times, serif;
+    display: flex;
+}
+
+
+.logo_container {
+    width: 3rem;
+    height: 3rem;
+    background-color: lightblue;
+    border: 0.1rem solid black;
+    display: flex;
+    margin-right: 0.1rem;
+}
+
+.logo_tile img{
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    display: inline-flex;
+    width: max-content;
+    padding: 1rem;
+    text-align: center;
+    border-right : 1px solid lightgrey;
+}
+li:last-child{
+    border-right: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding : 0;
+}
+
+li a {
+    width: 100%;
+    text-decoration: none;
+    color: #074E46;
+}
+
+li a:visited{
+    color: #074E46;
+}
+li a:hover{
+    color: white;
+}
+
+li a:hover:visited {
+    color: #074E46;
+}
+
+li:hover {
+    background-color: #0F665E;
+    color: white;
+}
+li:hover a:visited {
+    color: white;
+}
