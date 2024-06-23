@@ -1,5 +1,5 @@
 
-    export const tilesInfos = [
+const tilesInfos = [
         { "title": "Bleu sombre", "colorCode": "131625" },
         { "title": "?", "colorCode": "182235" },
         { "title": "?", "colorCode": "1e293d" },
@@ -38,4 +38,5 @@
         { "title": "", "colorCode": "BBB7C4" },
         { "title": "", "colorCode": "4A263C" },
         { "title": "", "colorCode": "2A3356" }
-    ]
+    ];
+export default tilesInfos;
