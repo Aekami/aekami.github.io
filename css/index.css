@@ -1,8 +1,103 @@
 
-body{
-    background-color: #44A59C ;
+:root{
+    --bgColor : #e9f0f5 ; /* #44A59C */
+    --mainTextColor : #7f8c97;
+    --linksColor : #acb7c0;
+    --secondaryNavbarColor : #0F665E;
+
+    --darkBlue : #303e49; /* blue dark */
+    --red : #c03b44; /* red */
+    --white : #ffffff; /* white */
+    --green : #75ce66; /* green */
+    --yellow : #f0ca45; /* yellow */
+
+    --impactFont : Impact, fantasy, "Times New Roman", Times, serif;
+    --baseFont : "Times New Roman", Times, serif;
 }
 
+body{
+    background-color : var(--bgColor) ;
+    color : var(--mainTextColor);
+}
 
+a {
+	color: var(--linksColor) ;
+	text-decoration: none;
+	font-family: var(--baseFont);
+}
 
+img {
+	max-width: 100%;
+}
 
+.bodyContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin:auto;
+}
+
+.title{
+    font-family: var(--baseFont);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.subtitle{
+    font-family: var(--baseFont);
+    font-weight: bold;
+    font-size: 1rem;
+}
+.navbar-left{
+    width : 12rem;
+    background-color: #f1f1f1;
+    outline: lightgrey solid 1px;
+}
+
+.navbar-left ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.navbar-left li{
+    font-size:larger;
+    padding: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: lightgrey solid 1px;
+}
+
+.navbar-left li:hover{
+    background-color: var(--secondaryNavbarColor);
+    color: white;
+}
+
+.navbar-left li:hover a{
+    color: white;
+}
+
+.navbar-left li a{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-left li a:hover {
+    background-color: var(--secondaryNavbarColor);
+    color: white;
+}
+
+.container{
+    flex: 7;
+    outline: black solid 1px;
+    border-radius: 5px;
+}
+
+.content{
+    padding: 2rem;
+    background-color: var(--white);
+    max-width: 100%;
+    max-height: 100%;
+}
