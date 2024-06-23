@@ -1,5 +1,5 @@
 
-import { tilesInfos } from "../json/tileInfos";
+import { tilesInfos } from "../json/tileInfos.js";
 
     function copyToClipboard(textToCopy = "Copied text was empty."){
         navigator.clipboard.writeText(textToCopy); 
