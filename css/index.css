@@ -1,18 +1,25 @@
 
 :root{
     --bgColor : #e9f0f5 ; /* #44A59C */
-    --mainTextColor : #7f8c97;
-    --linksColor : #acb7c0;
+
+    --titleColor : #074E46;
+    --subTitleColor : #0F665E;
+    --mainTextColor : black; /* #7f8c97; */
+
+    /* --linksColor : #acb7c0; */
     --secondaryNavbarColor : #0F665E;
+    
+    --impactFont : Impact, fantasy, "Times New Roman", Times, serif;
+    --baseFont : "Times New Roman", Times, serif;
 
     --darkBlue : #303e49; /* blue dark */
     --red : #c03b44; /* red */
     --white : #ffffff; /* white */
-    --green : #75ce66; /* green */
-    --yellow : #f0ca45; /* yellow */
-
-    --impactFont : Impact, fantasy, "Times New Roman", Times, serif;
-    --baseFont : "Times New Roman", Times, serif;
+    --green : #37a823; /* green */
+    --orange : #e69d00; /* orange */
+    --yellow : #ffd438; /* yellow */
+    --mauve : #460960;
+    --violet : #9a6fb1;
 }
 
 body{
@@ -21,7 +28,7 @@ body{
 }
 
 a {
-	color: var(--linksColor) ;
+	
 	text-decoration: none;
 	font-family: var(--baseFont);
 }
@@ -41,12 +48,15 @@ img {
     font-family: var(--baseFont);
     font-weight: bold;
     font-size: 2rem;
+    color : var(--titleColor);
 }
 
 .subtitle{
     font-family: var(--baseFont);
     font-weight: bold;
     font-size: 1rem;
+    color : var(--subTitleColor);
+    padding-bottom: 1rem;
 }
 .navbar-left{
     width : 12rem;
@@ -61,7 +71,9 @@ img {
     margin: 0;
     padding: 0;
     height: 100%;
+    text-align: center;
 }
+ 
 .navbar-left li{
     font-size:larger;
     padding: 0.5rem;
@@ -93,6 +105,7 @@ img {
     flex: 7;
     outline: black solid 1px;
     border-radius: 5px;
+    background-color: var(--white);
 }
 
 .content{
