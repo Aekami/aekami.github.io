@@ -1,0 +1,51 @@
+
+body{
+    background-color: #44A59C ;
+}
+
+li{
+    display: inline-flex;
+    width: max-content;
+    padding: 1rem;
+    text-align: center;
+    border-right : 1px solid lightgrey;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding : 0;
+}
+
+li a {
+    width: 100%;
+    text-decoration: none;
+    color: #074E46;
+}
+
+li a:visited{
+    color: #074E46;
+}
+li a:hover{
+    color: white;
+}
+
+li a:hover:visited {
+    color: red;
+}
+
+li:hover {
+    background-color: #0F665E;
+    color: white;
+}
+li:hover a:visited {
+    color: white;
+}
+
+
+.navBar {
+    background-color: #f1f1f1 ;
+    border: lightgrey solid 2px;
+    font-family: Impact, fantasy, "Times New Roman", Times, serif;
+    
+}
