@@ -12,14 +12,20 @@
     --impactFont : Impact, fantasy, "Times New Roman", Times, serif;
     --baseFont : "Times New Roman", Times, serif;
 
-    --darkBlue : #303e49; /* blue dark */
-    --red : #c03b44; /* red */
-    --white : #ffffff; /* white */
-    --green : #37a823; /* green */
-    --orange : #e69d00; /* orange */
-    --yellow : #ffd438; /* yellow */
+    --darkBlue : #303e49;
+    --red : #c03b44;
+    --white : #ffffff;
+    --green : #37a823;
+    --orange : #e69d00;
+    --yellow : #ffd438;
     --mauve : #460960;
     --violet : #9a6fb1;
+
+    --darkModeBgColor : #0F0F0F;
+    /*--darkModeSecondaryColor : #3C3C3C; */
+    --darkModeHighlightColor : #272727;
+    --darkModeContrastColor : #F1F1F1;
+
 }
 
 body{
