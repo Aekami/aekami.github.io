@@ -11,7 +11,7 @@ function loadNavBar() {
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, 'text/html');
             const navbar = doc.querySelector('navBar');
-            document.querySelector('.nav').appendChild(navbar);
+            document.getElementById('.nav').appendChild(navbar);
         })
         .catch(error => console.error('Error loading navbar:', error));
 }
