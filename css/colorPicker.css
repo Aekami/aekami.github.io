@@ -28,7 +28,7 @@ body{
 .tile-title{
     height: 4em;
     color: white;
-    font-family: Impact, fantasy, "Times New Roman", Times, serif;
+    font-family: var(--baseFont); /* Impact, fantasy, "Times New Roman", Times, serif; */
     -webkit-text-stroke: 0.07rem black;
     -webkit-font-smoothing: antialiased;
     font-size: 2rem;
