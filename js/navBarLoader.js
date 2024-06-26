@@ -25,6 +25,8 @@ function loadNavBar() {
 
             if (currentPath.includes('/wakfu/')) {
                 loadWakfuHomeLinks;
+            } else if (currentPath.includes('/wakfu/stuffs')) {
+                loadHomeLinks();
             } else {
                 loadHomeLinks();
             }
