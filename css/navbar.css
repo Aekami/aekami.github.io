@@ -1,5 +1,5 @@
 .navBar {
-    background-color: var(--darkModeContrastColor);
+    background-color: var(--darkModeBgColor);
     border: lightgrey solid 2px;
     font-family: var(--baseFont);/* Impact, fantasy, "Times New Roman", Times, serif;*/
     display: flex;
