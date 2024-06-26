@@ -31,6 +31,7 @@ function loadNavBar() {
             } else {
                 loadHomeLinks();
             }
+            
             const listItems = navContainer.querySelectorAll('ul li');
             listItems.forEach(item => {
                 const anchor = item.querySelector('a');
