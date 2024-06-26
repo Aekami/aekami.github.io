@@ -24,10 +24,8 @@ function loadNavBar() {
             document.querySelector('.nav').appendChild(navbar);
 
             if (currentPath.includes('/wakfu/stuffs')) {
-                console.log("Loaded /wakfu/stuffs links wakfu");
                 loadWakfuStuffLinks();
             } else if (currentPath.includes('/wakfu/')) {
-                console.log("Loaded /wakfu  links wakfu");
                 loadWakfuLinks();
             } else {
                 console.log("You shouldn't be here :thinking:");
