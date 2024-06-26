@@ -1,3 +1,14 @@
+:root{
+    --darkModeBgColor : #0F0F0F;
+    --darkModeHighlightColor : #272727;
+    --darkModeContrastColor : #F1F1F1;
+
+    --bgColor : #e9f0f5; /* #44A59C */
+    --titleColor : #074E46;
+    --subTitleColor : #0F665E;
+    --mainTextColor : black;
+    --secondaryNavbarColor : #0F665E;
+}
 
 body{
     background-color: var(--darkModeBgColor); /* #1e293d ;*/
