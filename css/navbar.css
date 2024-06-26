@@ -30,6 +30,7 @@
     padding: 1rem;
     text-align: center;
     border-right : 1px solid lightgrey;
+    cursor: pointer;
 }
 .navBar li:last-child{
     border-right: none;
