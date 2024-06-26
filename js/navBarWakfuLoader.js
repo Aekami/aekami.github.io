@@ -1,15 +1,17 @@
 
+function getBaseURL() {
+    return document.baseURI;
+}
+
 function loadNavBar() {
     let pathToNavBar;
     const currentPath = window.location.pathname;
+    const baseURL =  document.baseURI;
     
-    if(currentPath.includes('/wakfu/stuffs')){
-        pathToNavBar = '../../navBars/wakfu/navBar.html';
-    } 
-    else if (currentPath.includes('/wakfu/')) {
-        pathToNavBar = '../navBars/wakfu/navBar.html';
+    if (currentPath.includes('/wakfu/')) {
+        pathToNavBar = baseURL + '/navBars/wakfu/navBar.html';
     } else {
-        pathToNavBar = '../navBars/home/navBar.html';
+        pathToNavBar = baseURL + '/navBars/home/navBar.html';
     }
 
     fetch(pathToNavBar)
