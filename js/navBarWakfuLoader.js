@@ -3,14 +3,15 @@ function loadNavBar() {
     let pathToNavBar;
     const currentPath = window.location.pathname;
     
-    if (currentPath.includes('/wakfu/')) {
-        pathToNavBar = '../navbars/wakfu/navBar.html';
-    } else if(currentPath.includes('/wakfu/stuffs')){
+    if(currentPath.includes('/wakfu/stuffs')){
         pathToNavBar = '../../navbars/wakfu/navBar.html';
+    } 
+    else if (currentPath.includes('/wakfu/')) {
+        pathToNavBar = '../navbars/wakfu/navBar.html';
     } else {
         pathToNavBar = '../navbars/home/navBar.html';
     }
-    
+
     fetch(pathToNavBar)
         .then(response => {
             if (!response.ok) {
