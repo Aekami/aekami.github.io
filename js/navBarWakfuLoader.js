@@ -3,6 +3,7 @@ function loadNavBar() {
     fetch('../navBars/wakfu/navBar.html')
         .then(response => {
             if (!response.ok) {
+                console.log(response);
                 throw new Error('Error fetching navBar.');
             }
             return response.text();
