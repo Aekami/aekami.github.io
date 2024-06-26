@@ -23,10 +23,10 @@ function loadNavBar() {
             const navbar = doc.querySelector('.navBar');
             document.querySelector('.nav').appendChild(navbar);
 
-            if (currentPath.includes('/wakfu/')) {
-                loadWakfuHomeLinks;
-            } else if (currentPath.includes('/wakfu/stuffs')) {
+            if (currentPath.includes('/wakfu/stuffs')) {
                 loadHomeLinks();
+            } else if (currentPath.includes('/wakfu/')) {
+                loadWakfuHomeLinks;
             } else {
                 loadHomeLinks();
             }
