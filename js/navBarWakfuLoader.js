@@ -40,7 +40,7 @@ stuffLink
     homeLink.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
-    imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
+    imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
 
     const wakfuHomeLink = document.getElementById('wakfuHomeLink');
     wakfuHomeLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
@@ -57,7 +57,7 @@ function loadWakfuLinks(){
     homeLink.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
-    imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
+    imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
 
     const wakfuHomeLink = document.getElementById('wakfuHomeLink');
     wakfuHomeLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
