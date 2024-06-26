@@ -10,8 +10,8 @@ function loadNavBar() {
         .then(data => {
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, 'text/html');
-            const navbar = doc.querySelector('navBar');
-            document.getElementById('.nav').appendChild(navbar);
+            const navbar = doc.querySelector('.navBar');
+            document.querySelector('.nav').appendChild(navbar);
         })
         .catch(error => console.error('Error loading navbar:', error));
 }
