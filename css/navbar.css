@@ -1,10 +1,14 @@
 .navBar {
-    background-color: #f1f1f1 ;
+    background-color: var(--darkModeContrastColor);
     border: lightgrey solid 2px;
     font-family: Impact, fantasy, "Times New Roman", Times, serif;
     display: flex;
 }
-
+.nav{
+    background-color: var(--darkModeContrastColor);
+    min-height: calc(3rem + 6px);
+    width: 100%;
+}
 
 .navBar .logo_container {
     width: 3rem;
