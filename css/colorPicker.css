@@ -1,17 +1,19 @@
 
 body{
-    background-color: var(--bgColor); /* #1e293d ;*/
+    background-color: var(--darkModeBgColor); /* #1e293d ;*/
 }
 .tilesContainer {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: var(--darkModeContrastColor); /* #343d4c;*/
-    border: 0.3rem outset var(--bgColor);
+    background-color: var(--darkModeHighlightColor); /* #343d4c;*/
+    border: 0.3rem outset var(--darkModeContrastColor);
     text-align: center;
     gap: 1rem;
     padding: 1rem;
+    outline: black solid 1px;
+    border-radius: 5px;
 }
 .tileContainer{
     width: 10rem;
