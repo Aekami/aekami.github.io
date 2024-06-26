@@ -61,8 +61,9 @@ function loadWakfuHomeLinks(){
     const imageLink = document.getElementById('imageLink');
     imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
 
-    const wakfuLink = document.getElementById('wakfuHomeLink');
- 
+    const wakfuHomeLink = document.getElementById('wakfuHomeLink');
+    wakfuHomeLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
+
 }
 
 function loadWakfuLinks(){
@@ -74,5 +75,6 @@ function loadWakfuLinks(){
     imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
 
     const wakfuLink = document.getElementById('wakfuHomeLink');
+    wakfuLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
  
 }

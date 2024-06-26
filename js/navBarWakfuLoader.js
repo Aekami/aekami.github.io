@@ -35,14 +35,19 @@ function loadNavBar() {
 }
 
 function loadWakfuStuffLinks(){
-
+stuffLink
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
     imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
 
-    const wakfuLink = document.getElementById('wakfuHomeLink');
+    const wakfuHomeLink = document.getElementById('wakfuHomeLink');
+    wakfuHomeLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
+
+    const stuffLink = document.getElementById('stuffLink');
+    stuffLink.href = `${window.location.origin}}/wakfu/stuffs/avant_de_se_stuff.html`;
+    
  
 }
 
@@ -54,6 +59,7 @@ function loadWakfuLinks(){
     const imageLink = document.getElementById('imageLink');
     imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
 
-    const wakfuLink = document.getElementById('wakfuHomeLink');
+    const wakfuHomeLink = document.getElementById('wakfuHomeLink');
+    wakfuHomeLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
  
 }
