@@ -1,6 +1,6 @@
 
 function loadNavBar() {
-    fetch('../navBar-Wakfu.html')
+    fetch('../navBars/wakfu/navBar.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error fetching navBar.');

@@ -1,6 +1,6 @@
 
 function loadNavBar() {
-    fetch('../navBar.html')
+    fetch('../navBars/home/navBar.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error fetching navBar.');
