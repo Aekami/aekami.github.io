@@ -21,7 +21,8 @@ function loadNavBar() {
             const parser = new DOMParser();
             const doc = parser.parseFromString(data, 'text/html');
             const navbar = doc.querySelector('.navBar');
-            document.querySelector('.nav').appendChild(navbar);
+            const navContainer = document.querySelector('.nav');
+            navContainer.appendChild(navbar);
 
             if (currentPath.includes('/wakfu/stuffs')) {
                 loadWakfuHomeLinks();
@@ -30,6 +31,15 @@ function loadNavBar() {
             } else {
                 loadHomeLinks();
             }
+            const listItems = navContainer.querySelectorAll('ul li');
+            listItems.forEach(item => {
+                const anchor = item.querySelector('a');
+                if (anchor) {
+                    item.addEventListener('click', () => {
+                        window.location.href = anchor.href;
+                    });
+                }
+            });
         })
         .catch(error => console.error('Error loading navbar:', error));
 }
