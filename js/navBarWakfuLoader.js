@@ -1,9 +1,9 @@
 
 function loadNavBar() {
     let pathToNavBar;
-    const currentPath = window.location.pathname;
     const baseURL =  window.location.origin;
-    
+    const currentPath = window.location.pathname;
+
     if (currentPath.includes('/wakfu/')) {
         pathToNavBar = baseURL + '/navBars/wakfu/navBar.html';
     } else {
@@ -13,8 +13,7 @@ function loadNavBar() {
     fetch(pathToNavBar)
         .then(response => {
             if (!response.ok) {
-                console.log(response);
-                throw new Error('Error fetching navBar.');
+                throw new Error('Error fetching navBar.'); // console.log(response);
             }
             return response.text();
         })
@@ -23,6 +22,38 @@ function loadNavBar() {
             const doc = parser.parseFromString(data, 'text/html');
             const navbar = doc.querySelector('.navBar');
             document.querySelector('.nav').appendChild(navbar);
+
+            if (currentPath.includes('/wakfu/stuffs')) {
+                loadWakfuStuffLinks();
+            } else if (currentPath.includes('/wakfu/')) {
+                loadWakfuLinks();
+            } else {
+                console.log("You shouldn't be here :thinking:");
+            }
         })
         .catch(error => console.error('Error loading navbar:', error));
+}
+
+function loadWakfuStuffLinks(){
+
+    const homeLink = document.getElementById('homeLink');
+    homeLink.href = `${window.location.origin}/index.html`;
+
+    const imageLink = document.getElementById('imageLink');
+    imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
+
+    const wakfuLink = document.getElementById('wakfuHomeLink');
+ 
+}
+
+function loadWakfuLinks(){
+
+    const homeLink = document.getElementById('homeLink');
+    homeLink.href = `${window.location.origin}/index.html`;
+
+    const imageLink = document.getElementById('imageLink');
+    imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
+
+    const wakfuLink = document.getElementById('wakfuHomeLink');
+ 
 }
