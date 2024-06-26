@@ -1,12 +1,8 @@
 
-function getBaseURL() {
-    return document.baseURI;
-}
-
 function loadNavBar() {
     let pathToNavBar;
     const currentPath = window.location.pathname;
-    const baseURL =  document.baseURI;
+    const baseURL =  window.location.origin;
     
     if (currentPath.includes('/wakfu/')) {
         pathToNavBar = baseURL + '/navBars/wakfu/navBar.html';
