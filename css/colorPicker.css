@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color:#343d4c;
+    background-color: var(--darkModeContrastColor); /* #343d4c;*/
     border: 0.3rem outset var(--bgColor);
     text-align: center;
     gap: 1rem;
