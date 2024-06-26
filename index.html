@@ -6,11 +6,17 @@
 		<link rel="stylesheet" href="./css/navbar.css">
 		<script src="./js/navBarLoader.js" defer></script>
     </head>
-	<body onload="loadNavBar()">
+	<body>
 		<div class="nav">
 
 		</div>
 		
     </body>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			loadNavBar();
+		});
+	</script>
 
 </html>
