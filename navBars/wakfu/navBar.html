@@ -1,5 +1,5 @@
 
-<div class="navBar" onload="loadLinks()">
+<div class="navBar">
     <div class="logo_container">
         <div class="logo_tile">
             <a id='homeLink'> <img id="imageLink" alt="aekami_elio"> </a>
@@ -11,18 +11,8 @@
     </ul>
 
     <script>
-        function loadLinks(){
-
-            const homeLink = document.getElementById('homeLink');
-            homeLink.href = `${window.location.origin}/index.html`;
-
-            const imageLink = document.getElementById('imageLink');
-            imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
-
-            const wakfuLink = document.getElementById('wakfuHomeLink');
-            wakfuLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
-            
-        }
-        
-    </script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			loadNavBar();
+		});
+	</script>
 </div>

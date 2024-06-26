@@ -24,15 +24,15 @@ function loadNavBar() {
             document.querySelector('.nav').appendChild(navbar);
 
             if (currentPath.includes('/wakfu/')) {
-                // loadWakfuLinks();
+                loadWakfuHomeLinks;
             } else {
-                loadHomeLinks();
+                loadWakfuHomeLinks();
             }
         })
         .catch(error => console.error('Error loading navbar:', error));
 }
 
-// TODO refactor, should be oblivious to whatver the actual html is. Move to the html navBar file itself.
+// TODO refactor this monstruosity, logic should be oblivious to whatever the actual html is. Maybe move to the html navBar files themselves.
 function loadHomeLinks(){
 
     const homeLink = document.getElementById('homeLink');
@@ -50,4 +50,17 @@ function loadHomeLinks(){
     const aboutLink = document.getElementById('aboutLink');
     aboutLink.href = `${window.location.origin}/pages/about.html`;
 }
+
+function loadWakfuHomeLinks(){
     
+
+    const homeLink = document.getElementById('homeLink');
+    homeLink.href = `${window.location.origin}/index.html`;
+
+    const imageLink = document.getElementById('imageLink');
+    imageLink.href = `${window.location.origin}/images/aekami_elio.png`;
+
+    const wakfuLink = document.getElementById('wakfuHomeLink');
+    wakfuLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
+ 
+}
