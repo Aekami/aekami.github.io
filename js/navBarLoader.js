@@ -26,7 +26,7 @@ function loadNavBar() {
             if (currentPath.includes('/wakfu/')) {
                 loadWakfuHomeLinks;
             } else {
-                loadWakfuHomeLinks();
+                loadHomeLinks();
             }
         })
         .catch(error => console.error('Error loading navbar:', error));
@@ -52,7 +52,6 @@ function loadHomeLinks(){
 }
 
 function loadWakfuHomeLinks(){
-    
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
