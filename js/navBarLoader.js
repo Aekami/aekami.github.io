@@ -1,6 +1,9 @@
 
 function loadNavBar() {
-    fetch('../navBars/home/navBar.html')
+
+    const baseURL =  window.location.origin;
+    
+    fetch(baseURL + '/navBars/home/navBar.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error fetching navBar.');
