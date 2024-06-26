@@ -1,9 +1,16 @@
 
 function loadNavBar() {
-
+    let pathToNavBar;
     const baseURL =  window.location.origin;
+    const currentPath = window.location.pathname;
+
+    if (currentPath.includes('/wakfu/')) {
+        pathToNavBar = baseURL + '/navBars/wakfu/navBar.html';
+    } else {
+        pathToNavBar = baseURL + '/navBars/home/navBar.html';
+    }
     
-    fetch(baseURL + '/navBars/home/navBar.html')
+    fetch(pathToNavBar)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error fetching navBar.');
@@ -17,19 +24,16 @@ function loadNavBar() {
             document.querySelector('.nav').appendChild(navbar);
 
             if (currentPath.includes('/wakfu/')) {
-                pathToNavBar = baseURL + '/navBars/wakfu/navBar.html';
+                // loadWakfuLinks();
             } else {
-                pathToNavBar = baseURL + '/navBars/home/navBar.html';
-                loadWakfuLinks();
+                loadHomeLinks();
             }
-
-
         })
         .catch(error => console.error('Error loading navbar:', error));
 }
 
 // TODO refactor, should be oblivious to whatver the actual html is. Move to the html navBar file itself.
-function loadWakfuLinks(){
+function loadHomeLinks(){
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
