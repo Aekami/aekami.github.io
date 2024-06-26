@@ -1,5 +1,5 @@
 
-<div class="navBar">
+<div class="navBar" onload="loadLinks()">
     <div class="logo_container">
         <div class="logo_tile">
             <a id='homeLink'> <img id="imageLink" alt="aekami_elio"> </a>
@@ -13,7 +13,7 @@
     </ul>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        function loadLinks(){
 
             const homeLink = document.getElementById('homeLink');
             homeLink.href = `${window.location.origin}/index.html`;
@@ -29,7 +29,7 @@
 
             const aboutLink = document.getElementById('aboutLink');
             aboutLink.href = `${window.location.origin}/pages/about.html`;
-        });
-        
+
+        }
     </script>
 </div>
