@@ -80,7 +80,7 @@ function loadHomeLinks(){
     wakfuHomeLinkEn.href = `${window.location.origin}/en/wakfu/wakfu-home.html`;
 
     const aboutLink = document.getElementById('aboutLink');
-    aboutLink.href = `${window.location.origin}/fr/pages/about.html`;
+    aboutLink.href = `${window.location.origin}/pages/about.html`;
 }
 
 /** Adds the links for the wakfu FR home page */
