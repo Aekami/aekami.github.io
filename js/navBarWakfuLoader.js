@@ -79,7 +79,7 @@ function loadWakfuStuffLinksFr(){
     const wakfuHomeLink = document.getElementById('wakfuHomeLinkFr');
     wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
 
-    const stuffLink = document.getElementById('stuffLink');
+    const stuffLink = document.getElementById('stuffLinkFr');
     stuffLink.href = `${window.location.origin}/fr/wakfu/stuffs/avant_de_se_stuff.html`;
     
 }
@@ -95,7 +95,7 @@ function loadWakfuLinksFr(){
     const wakfuHomeLink = document.getElementById('wakfuHomeLinkFr');
     wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
 
-    const stuffLink = document.getElementById('stuffLink');
+    const stuffLink = document.getElementById('stuffLinkFr');
     stuffLink.href = `${window.location.origin}/fr/wakfu/stuffs/avant_de_se_stuff.html`;
  
 }
