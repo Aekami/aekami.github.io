@@ -6,7 +6,7 @@ function loadNavBar() {
 
     if (currentPath.includes('/fr/')) {
         if (currentPath.includes('/wakfu/')) {
-            pathToNavBar = baseURL + '/fr/navBars/wakfu/navBar.html';
+            pathToNavBar = baseURL + '/fr//navBars/wakfu/navBar.html';
         } else {
             pathToNavBar = baseURL + '/fr/navBars/home/navBar.html';
         }
@@ -20,11 +20,11 @@ function loadNavBar() {
     else{
         pathToNavBar = baseURL + '/fr/navBars/home/navBar.html'; // the "default" navbar.
     }
-    
+
     fetch(pathToNavBar)
         .then(response => {
             if (!response.ok) {
-                throw new Error('Error fetching navBar.');
+                throw new Error('Error fetching navBar.'); // console.log(response);
             }
             return response.text();
         })
@@ -37,18 +37,24 @@ function loadNavBar() {
 
             if (currentPath.includes('/fr/')) {
                 if (currentPath.includes('/wakfu/stuffs')) {
-                    loadWakfuHomeLinksFr();
+                    loadWakfuStuffLinksFr();
                 } else if (currentPath.includes('/wakfu/')) {
                     loadWakfuLinksFr();
                 } else {
-                    loadHomeLinksFr();
+                    console.log("You shouldn't be here :thinking:"); // TODO : 404 ?
                 }
             }else if (currentPath.includes('/en/')) {
-
+                if (currentPath.includes('/wakfu/stuffs')) {
+                    // loadWakfuStuffLinksEn(); // TODO
+                } else if (currentPath.includes('/wakfu/')) {
+                    // loadWakfuLinksEn(); // TODO
+                } else {
+                    console.log("You shouldn't be here :thinking:");
+                }
             }else {
-                loadHomeLinksFr();
+                console.log("You shouldn't be here :thinking:");
             }
-              
+
             const listItems = navContainer.querySelectorAll('ul li');
             listItems.forEach(item => {
                 const anchor = item.querySelector('a');
@@ -62,8 +68,7 @@ function loadNavBar() {
         .catch(error => console.error('Error loading navbar:', error));
 }
 
-// TODO refactor this monstruosity, logic should be oblivious to whatever the actual html is. Maybe move to the html navBar files themselves.
-function loadHomeLinksFr(){
+function loadWakfuStuffLinksFr(){
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
@@ -71,24 +76,12 @@ function loadHomeLinksFr(){
     const imageLink = document.getElementById('imageLink');
     imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
 
-    const wakfuHomeLink = document.getElementById('wakfuHomeLink');
+    const wakfuHomeLink = document.getElementById('wakfuHomeLinkFr');
     wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
 
-    const aboutLink = document.getElementById('aboutLink');
-    aboutLink.href = `${window.location.origin}/fr/pages/about.html`;
-}
-
-function loadWakfuHomeLinksFr(){
-
-    const homeLink = document.getElementById('homeLink');
-    homeLink.href = `${window.location.origin}/index.html`;
-
-    const imageLink = document.getElementById('imageLink');
-    imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
-
-    const wakfuHomeLink = document.getElementById('wakfuHomeLink');
-    wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
-
+    const stuffLink = document.getElementById('stuffLink');
+    stuffLink.href = `${window.location.origin}/fr/wakfu/stuffs/avant_de_se_stuff.html`;
+    
 }
 
 function loadWakfuLinksFr(){
@@ -99,7 +92,10 @@ function loadWakfuLinksFr(){
     const imageLink = document.getElementById('imageLink');
     imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
 
-    const wakfuLink = document.getElementById('wakfuHomeLink');
-    wakfuLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
+    const wakfuHomeLink = document.getElementById('wakfuHomeLinkFr');
+    wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
+
+    const stuffLink = document.getElementById('stuffLink');
+    stuffLink.href = `${window.location.origin}/fr/wakfu/stuffs/avant_de_se_stuff.html`;
  
 }
