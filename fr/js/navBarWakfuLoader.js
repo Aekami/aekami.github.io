@@ -4,10 +4,21 @@ function loadNavBar() {
     const baseURL =  window.location.origin;
     const currentPath = window.location.pathname;
 
-    if (currentPath.includes('/wakfu/')) {
-        pathToNavBar = baseURL + '/navBars/wakfu/navBar.html';
-    } else {
-        pathToNavBar = baseURL + '/navBars/home/navBar.html';
+    if (currentPath.includes('/fr/')) {
+        if (currentPath.includes('/wakfu/')) {
+            pathToNavBar = baseURL + '/navBars/wakfu/navBar.html';
+        } else {
+            pathToNavBar = baseURL + '/navBars/home/navBar.html';
+        }
+    }else if (currentPath.includes('/en/')) { 
+        if (currentPath.includes('/wakfu/')) {
+            pathToNavBar = baseURL + '/fr/navBars/wakfu/navBar.html'; // TODO edit with /en/ version of it whenever it will be added
+        } else {
+            pathToNavBar = baseURL + '/fr/navBars/home/navBar.html'; // TODO edit with /en/ version of it whenever it will be added
+        }
+    }
+    else{
+        pathToNavBar = baseURL + '/fr/navBars/home/navBar.html'; // the "default" navbar.
     }
 
     fetch(pathToNavBar)
@@ -24,14 +35,26 @@ function loadNavBar() {
             const navContainer = document.querySelector('.nav');
             navContainer.appendChild(navbar);
 
-            if (currentPath.includes('/wakfu/stuffs')) {
-                loadWakfuStuffLinks();
-            } else if (currentPath.includes('/wakfu/')) {
-                loadWakfuLinks();
-            } else {
+            if (currentPath.includes('/fr/')) {
+                if (currentPath.includes('/wakfu/stuffs')) {
+                    loadWakfuStuffLinksFr();
+                } else if (currentPath.includes('/wakfu/')) {
+                    loadWakfuLinksFr();
+                } else {
+                    console.log("You shouldn't be here :thinking:"); // TODO : 404 ?
+                }
+            }else if (currentPath.includes('/en/')) {
+                if (currentPath.includes('/wakfu/stuffs')) {
+                    // loadWakfuStuffLinksEn(); // TODO
+                } else if (currentPath.includes('/wakfu/')) {
+                    // loadWakfuLinksEn(); // TODO
+                } else {
+                    console.log("You shouldn't be here :thinking:");
+                }
+            }else {
                 console.log("You shouldn't be here :thinking:");
             }
-            
+
             const listItems = navContainer.querySelectorAll('ul li');
             listItems.forEach(item => {
                 const anchor = item.querySelector('a');
@@ -45,7 +68,7 @@ function loadNavBar() {
         .catch(error => console.error('Error loading navbar:', error));
 }
 
-function loadWakfuStuffLinks(){
+function loadWakfuStuffLinksFr(){
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
@@ -54,14 +77,14 @@ function loadWakfuStuffLinks(){
     imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
 
     const wakfuHomeLink = document.getElementById('wakfuHomeLink');
-    wakfuHomeLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
+    wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
 
     const stuffLink = document.getElementById('stuffLink');
-    stuffLink.href = `${window.location.origin}/wakfu/stuffs/avant_de_se_stuff.html`;
+    stuffLink.href = `${window.location.origin}/fr/wakfu/stuffs/avant_de_se_stuff.html`;
     
 }
 
-function loadWakfuLinks(){
+function loadWakfuLinksFr(){
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
@@ -70,9 +93,9 @@ function loadWakfuLinks(){
     imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
 
     const wakfuHomeLink = document.getElementById('wakfuHomeLink');
-    wakfuHomeLink.href = `${window.location.origin}/wakfu/wakfu-home.html`;
+    wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
 
     const stuffLink = document.getElementById('stuffLink');
-    stuffLink.href = `${window.location.origin}/wakfu/stuffs/avant_de_se_stuff.html`;
+    stuffLink.href = `${window.location.origin}/fr/wakfu/stuffs/avant_de_se_stuff.html`;
  
 }
