@@ -68,6 +68,7 @@ function loadNavBar() {
         .catch(error => console.error('Error loading navbar:', error));
 }
 
+/* FR */
 function loadWakfuStuffLinksFr(){
 
     const homeLink = document.getElementById('homeLink');
@@ -97,5 +98,38 @@ function loadWakfuLinksFr(){
 
     const stuffLink = document.getElementById('stuffLinkFr');
     stuffLink.href = `${window.location.origin}/fr/wakfu/stuffs/avant_de_se_stuff.html`;
+ 
+}
+
+/* EN */
+function loadWakfuStuffLinksEn(){
+
+    const homeLink = document.getElementById('homeLink');
+    homeLink.href = `${window.location.origin}/index.html`;
+
+    const imageLink = document.getElementById('imageLink');
+    imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
+
+    const wakfuHomeLinkEn = document.getElementById('wakfuHomeLinkEn');
+    wakfuHomeLinkEn.href = `${window.location.origin}/en/wakfu/wakfu-home.html`;
+
+    const stuffLink = document.getElementById('stuffLinkEn');
+    stuffLink.href = `${window.location.origin}/en/wakfu/stuffs/before_gearing_up.html`;
+    
+}
+
+function loadWakfuLinksEn(){
+
+    const homeLink = document.getElementById('homeLink');
+    homeLink.href = `${window.location.origin}/index.html`;
+
+    const imageLink = document.getElementById('imageLink');
+    imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
+
+    const wakfuHomeLinkEn = document.getElementById('wakfuHomeLinkEn');
+    wakfuHomeLinkEn.href = `${window.location.origin}/en/wakfu/wakfu-home.html`;
+
+    const stuffLinkEn = document.getElementById('stuffLinkEn');
+    stuffLinkEn.href = `${window.location.origin}/en/wakfu/stuffs/before_gearing_up.html`;
  
 }
