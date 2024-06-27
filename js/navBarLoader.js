@@ -41,12 +41,12 @@ function loadNavBar() {
                 } else if (currentPath.includes('/wakfu/')) {
                     loadWakfuLinksFr();
                 } else {
-                    loadHomeLinksFr();
+                    loadHomeLinks();
                 }
             }else if (currentPath.includes('/en/')) {
 
             }else {
-                loadHomeLinksFr();
+                loadHomeLinks();
             }
               
             const listItems = navContainer.querySelectorAll('ul li');
@@ -65,7 +65,7 @@ function loadNavBar() {
 /* FR */
 // TODO refactor this monstruosity, logic should be oblivious to whatever the actual html is. Maybe move to the html navBar files themselves.
 /** Adds the links for the general home page */
-function loadHomeLinksFr(){
+function loadHomeLinks(){
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
@@ -73,8 +73,11 @@ function loadHomeLinksFr(){
     const imageLink = document.getElementById('imageLink');
     imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
 
-    const wakfuHomeLink = document.getElementById('wakfuHomeLinkFr');
-    wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
+    const wakfuHomeLinkFr = document.getElementById('wakfuHomeLinkFr');
+    wakfuHomeLinkFr.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
+
+    const wakfuHomeLinkEn = document.getElementById('wakfuHomeLinkEn');
+    wakfuHomeLinkEn.href = `${window.location.origin}/en/wakfu/wakfu-home.html`;
 
     const aboutLink = document.getElementById('aboutLink');
     aboutLink.href = `${window.location.origin}/fr/pages/about.html`;
