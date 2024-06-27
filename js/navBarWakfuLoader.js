@@ -45,9 +45,9 @@ function loadNavBar() {
                 }
             }else if (currentPath.includes('/en/')) {
                 if (currentPath.includes('/wakfu/stuffs')) {
-                    // loadWakfuStuffLinksEn(); // TODO
+                    loadWakfuStuffLinksEn();
                 } else if (currentPath.includes('/wakfu/')) {
-                    // loadWakfuLinksEn(); // TODO
+                    loadWakfuLinksEn();
                 } else {
                     console.log("You shouldn't be here :thinking:");
                 }
