@@ -71,9 +71,6 @@ function loadHomeLinksFr(){
     const imageLink = document.getElementById('imageLink');
     imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
 
-    const colorPicker = document.getElementById('colorPickerLink');
-    colorPicker.href = `${window.location.origin}/fr/pages/colorPicker.html`;
-
     const wakfuHomeLink = document.getElementById('wakfuHomeLink');
     wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
 
