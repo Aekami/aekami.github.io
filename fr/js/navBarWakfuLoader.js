@@ -6,9 +6,9 @@ function loadNavBar() {
 
     if (currentPath.includes('/fr/')) {
         if (currentPath.includes('/wakfu/')) {
-            pathToNavBar = baseURL + '/navBars/wakfu/navBar.html';
+            pathToNavBar = baseURL + '/fr//navBars/wakfu/navBar.html';
         } else {
-            pathToNavBar = baseURL + '/navBars/home/navBar.html';
+            pathToNavBar = baseURL + '/fr/navBars/home/navBar.html';
         }
     }else if (currentPath.includes('/en/')) { 
         if (currentPath.includes('/wakfu/')) {
