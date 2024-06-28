@@ -1,4 +1,6 @@
 
+const aekamiIconUrl = "https://i.imgur.com/VePAzK3.png";
+
 function loadNavBar() {
     let pathToNavBar;
     const baseURL =  window.location.origin;
@@ -75,7 +77,7 @@ function loadWakfuStuffLinksFr(){
     homeLink.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
-    imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
+    imageLink.src = aekamiIconUrl;
 
     const wakfuHomeLink = document.getElementById('wakfuHomeLinkFr');
     wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
@@ -91,7 +93,7 @@ function loadWakfuLinksFr(){
     homeLink.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
-    imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
+    imageLink.src = aekamiIconUrl;
 
     const wakfuHomeLink = document.getElementById('wakfuHomeLinkFr');
     wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
@@ -108,7 +110,7 @@ function loadWakfuStuffLinksEn(){
     homeLink.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
-    imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
+    imageLink.src = aekamiIconUrl;
 
     const wakfuHomeLinkEn = document.getElementById('wakfuHomeLinkEn');
     wakfuHomeLinkEn.href = `${window.location.origin}/en/wakfu/wakfu-home.html`;
@@ -124,7 +126,7 @@ function loadWakfuLinksEn(){
     homeLink.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
-    imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
+    imageLink.src = aekamiIconUrl;
 
     const wakfuHomeLinkEn = document.getElementById('wakfuHomeLinkEn');
     wakfuHomeLinkEn.href = `${window.location.origin}/en/wakfu/wakfu-home.html`;
