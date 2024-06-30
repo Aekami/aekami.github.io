@@ -85,6 +85,7 @@
 
     .dropdown:hover .dropDownButton {
         background-color: var(--secondaryNavbarColor);
+        color : white;
     }
 
     .dropdownContent {
