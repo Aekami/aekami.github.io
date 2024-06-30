@@ -100,5 +100,5 @@
 
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdownContent {
-        display: block;
+        display: flex;
     }
