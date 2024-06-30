@@ -96,7 +96,11 @@
     }
     
 
+    .dropdown:hover ul {
+        display: flex;
+        flex-direction: column;
+    }
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdownContent {
-        display: block;
+        display: flex;
     }
