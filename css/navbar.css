@@ -73,7 +73,7 @@
         overflow: hidden;
     }
 
-    .dropdown .dropbtn {
+    .dropdown .dropDownButton {
         border: none;
         outline: none;
         color: white;
@@ -83,7 +83,7 @@
         margin: 0;
     }
 
-    .navbar a:hover, .dropdown:hover .dropbtn {
+    .navbar a:hover, .dropdown:hover .dropDownButton {
         background-color: var(--secondaryNavbarColor);
     }
 
