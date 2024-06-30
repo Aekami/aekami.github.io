@@ -79,9 +79,6 @@ function loadWakfuStuffLinksFr(){
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
 
-    const wakfuHomeLink = document.getElementById('wakfuHomeLinkFr');
-    wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
-
     const stuffLink = document.getElementById('stuffLinkFr');
     stuffLink.href = `${window.location.origin}/fr/wakfu/stuffs/avant_de_se_stuff.html`;
     
@@ -95,8 +92,6 @@ function loadWakfuLinksFr(){
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
 
-    const wakfuHomeLink = document.getElementById('wakfuHomeLinkFr');
-    wakfuHomeLink.href = `${window.location.origin}/fr/wakfu/wakfu-home.html`;
 
     const stuffLink = document.getElementById('stuffLinkFr');
     stuffLink.href = `${window.location.origin}/fr/wakfu/stuffs/avant_de_se_stuff.html`;
@@ -112,9 +107,6 @@ function loadWakfuStuffLinksEn(){
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
 
-    const wakfuHomeLinkEn = document.getElementById('wakfuHomeLinkEn');
-    wakfuHomeLinkEn.href = `${window.location.origin}/en/wakfu/wakfu-home.html`;
-
     const stuffLink = document.getElementById('stuffLinkEn');
     stuffLink.href = `${window.location.origin}/en/wakfu/stuffs/before_gearing_up.html`;
     
@@ -127,9 +119,6 @@ function loadWakfuLinksEn(){
 
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
-
-    const wakfuHomeLinkEn = document.getElementById('wakfuHomeLinkEn');
-    wakfuHomeLinkEn.href = `${window.location.origin}/en/wakfu/wakfu-home.html`;
 
     const stuffLinkEn = document.getElementById('stuffLinkEn');
     stuffLinkEn.href = `${window.location.origin}/en/wakfu/stuffs/before_gearing_up.html`;
