@@ -72,6 +72,9 @@ function loadHomeLinks(){
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
 
+    const homeLink2 = document.getElementById('homeLink2');
+    homeLink2.href = `${window.location.origin}/index.html`;
+
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
 
@@ -91,6 +94,9 @@ function loadWakfuHomeLinksFr(){
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
 
+    const homeLink2 = document.getElementById('homeLink2');
+    homeLink2.href = `${window.location.origin}/index.html`;
+
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
 
@@ -104,6 +110,9 @@ function loadWakfuLinksFr(){
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
+
+    const homeLink2 = document.getElementById('homeLink2');
+    homeLink2.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
@@ -121,6 +130,9 @@ function loadWakfuHomeLinksEn(){
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
 
+    const homeLink2 = document.getElementById('homeLink2');
+    homeLink2.href = `${window.location.origin}/index.html`;
+
     const imageLink = document.getElementById('imageLink');
     imageLink.src = `${window.location.origin}/images/aekami_elio.png`;
 
@@ -134,6 +146,9 @@ function loadWakfuLinksEn(){
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
+
+    const homeLink2 = document.getElementById('homeLink2');
+    homeLink2.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
     imageLink.src = `${window.location.origin}/images/aekami_elio.png`;

@@ -76,6 +76,9 @@ function loadWakfuStuffLinksFr(){
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
 
+    const homeLink2 = document.getElementById('homeLink2');
+    homeLink2.href = `${window.location.origin}/index.html`;
+
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
 
@@ -88,6 +91,9 @@ function loadWakfuLinksFr(){
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
+
+    const homeLink2 = document.getElementById('homeLink2');
+    homeLink2.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
@@ -104,6 +110,9 @@ function loadWakfuStuffLinksEn(){
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
 
+    const homeLink2 = document.getElementById('homeLink2');
+    homeLink2.href = `${window.location.origin}/index.html`;
+
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
 
@@ -116,6 +125,9 @@ function loadWakfuLinksEn(){
 
     const homeLink = document.getElementById('homeLink');
     homeLink.href = `${window.location.origin}/index.html`;
+
+    const homeLink2 = document.getElementById('homeLink2');
+    homeLink2.href = `${window.location.origin}/index.html`;
 
     const imageLink = document.getElementById('imageLink');
     imageLink.src = aekamiIconUrl;
