@@ -87,7 +87,7 @@
         background-color: var(--secondaryNavbarColor);
     }
 
-    .dropdown-content {
+    .dropdownContent {
         display: none; /* hidden by default */
         position: absolute;
         background-color: #f9f9f9;
@@ -96,11 +96,11 @@
         z-index: 1;
     }
 
-    .dropdown-content a:hover {
+    .dropdownContent a:hover {
         background-color: #ddd;
     }
 
     /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {
+    .dropdown:hover .dropdownContent {
         display: block;
     }
