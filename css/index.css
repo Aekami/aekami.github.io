@@ -36,7 +36,7 @@ body {
     padding : 1rem;
 }
 
-.textcontentContainer{
+.textContentContainer{
   background-color: white;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
@@ -61,11 +61,6 @@ body {
     border-radius: 0.3rem;
     background-color: rgba(27, 27, 27, 0.05);
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-  }
   
 .footer .padding{
     background-color: var(--secondaryBgColor);

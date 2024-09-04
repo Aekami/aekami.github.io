@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Password Managers</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="../css/index.css">
+    </head>
+	<body>
+        <!-- NavBar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pwd-manager.html">Gestionnaire de MDP</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+  
+        <!-- Actual content start -->
+		<div class="content">
+			<div class="container">
+                <h2 class="text-center">Gestionnaires de mots de passe</h2>
+                <h5 class="text-center">Evitez les tentatives de phishing, et utilisez des vrais bons mots de passe, sans avoir à les retenir</h5>
+
+                <!-- Sommaire -->
+				<div class="textContentContainer">
+                    <div class="textContentTitle">Sommaire</div>
+                    <div class="textContent">
+                        <ul>
+                            <li><a href="#whyUse">Pourquoi utiliser un gestionnaire de mdp</a></li>
+                            <li><a href="#whichPrograms">Programmes recommandés</a></li>
+                            <li><a href="#howToUse">Comment utiliser</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+				<!-- First article thing -->
+				<div class="textContentContainer">
+					<span id="whyUse"></span>
+					<div class="textContentTitle">Pourquoi utiliser un gestionnaire de mots de passe</div>
+					<div class="textContent">
+						<h5>La situation</h5>
+						<p>
+							Qu'on soit bien d'accord, si vous n'utilisez pas de gestionnaire de mots de passe, vous réutilisez le(s) même(s) mdp partout. Au mieux vous avez quelques petites variations.
+							Et vos mdp sont éclatés. Et non, remplacer un "e" par un "€" ou un "s" par un "$" n'est pas un coup de génie, ça ne sert absolument à rien. D'ailleurs c'est assez simple :
+						</p>
+						<div class="text-center" style="padding-bottom:1rem">
+							<b> Si vous vous souvenez du mot de passe que vous venez de créer, c'est un mauvais mot de passe </b>
+						</div>
+						<p>
+							Un bon mot de passe, c'est un ensemble de caractères aléatoires avec une certaine longueur minimale, généralement minimum 16 caractères, mais + est mieux. De plus, la plupart des sites forcent les utilisateurs à utiliser des caractères spéciaux, majuscules, etc. dans leurs mots de passe.
+						</p>
+						<p> 
+							Un problème surgit : l'être humain est extêmement mauvais lorsqu'il s'agit de retenir des suites aléatoires de caractères.
+							Pas de bol, l'évolution a fait qu'on est assez bon pour retenir des choses logiques, mais pas des choses abstraites.
+							Ce qui fait que inévitablement, l'utilisateur crée un mot de passe simple et facile à retenir. Cela ne surprendra personne, mais un mdp simple et facile, c'est rarement un bon mdp.
+						</p>
+						<p> 
+							De ceci découle l'étape logique suivante : les utilisateurs incluent les prérequis (majuscules, caractère spécial, etc.) mais de la façon la plus simple possible. 
+							Et ils arrivent à des mots de passe comme "M0nmotd€pa$$e". Techniquement, celui-ci coche toutes les cases, mais est vraiment faible.
+						</p>
+						<p>
+							Comme tout le monde l'utilisateur a fait :
+						</p>
+						<ul>
+							<li>Il faut une majuscule ? Je la met sur la première lettre</li>
+							<li>Il faut des symboles ? Le e devient un €, le o devient un 0, le s devient un $, le a devient un @, etc.</li>
+						</ul>
+						<p>
+							Vous pensez vraiment que les "hackeurs" ne savent pas que vous remplacez vos e par des €, a par des @, etc ? Ce genre de subsitutions, c'est à peine mieux que ne rien faire.
+						</p>
+						<p>
+							A la fin, l'utilisateur est persuadé d'utiliser un bon mot de passe, malgré la mauvaise qualité de celui-ci.
+							Pire encore, ayant créé son mot de passe et ne voulant pas devoir se remémorer de pleins de mots de passes différents, il va réutiliser le même mot de passe (ou des petites variations de celui-ci) à travers pleins de sites et applications différents.
+							Tout ce qu'il ne faut pas faire.
+						</p>
+						<p>
+							Alors à quoi ressemble un vrai bon mot de passe ? A quelque chose comme ça : "mvQii7#i^AgQbB#XCvvc". Impossible à retenir facilement pour un humain.
+						</p>
+
+						<h5>Une solution simple existe pourtant</h5>
+						<p>
+							Les gestionnaires de mots de passe existent pour trivialiser ce problème.
+						</p>
+						<ul>
+							<li>Besoin d'un nouveau mdp de qualité, bien aléatoire ? Fait en 1 click.</li>
+							<ul>
+								<li>Besoin d'un mdp différent pour chaque site ? Fait en 1 click.</li>
+							</ul>
+							<li>Besoin de se connecter sur un site ? Fait en 1 click.</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="textContentContainer">
+					<span id="whichPrograms"></span>
+					<div class="textContentTitle">Programmes recommandés</div>
+					<div class="textContent">
+						<p>
+							Il existe tout un panel de gestionnaires de mots de passe sur le marché. Tous ne sont pas équivalents, et surtout tous ne sont pas exempts de controverses.
+							Comme toujours, libre à vous de faire vos propres recherches, cependant par facilité je vais ici conseiller 2 applications.
+						</p>
+						<p>
+							Les deux applications que je recommande sont <a href="https://keepass.info" target="_blank" rel="noopener noreferrer">KeePass</a> et <a href="https://bitwarden.com" target="_blank" rel="noopener noreferrer">BitWarden</a>. J'explique les raisons pour chacunes ci-dessous.
+						</p>
+
+						<h5>BitWarden</h5>
+						<p>
+							Les forces principales de BitWarden sont sa facilité d'utilisation, ses intégrations sous forme de plugins, et son accessibilité de partout depuis le cloud.
+							Il existe des plugins officiels pour tous les navigateurs principaux, qui permettent de très simplement click-droit -> autocomplete.
+							L'utilisation est fluide et assez intuitive.
+						</p>
+						<p>
+							Il s'agit du gestionnaire de mots de passe que je recommande personellement à mes amis et ma famille qui n'ont pas nécessairement de connaissances en informatique.
+						</p>
+						<ul>
+							<li>Facile d'utilisation</li>
+							<ul>
+								<li>Plugins pour tous les navigateurs principaux</li>
+							</ul>
+							<li>Synchronisation cloud</li>
+						</ul>
+						<p>
+							Il s'agit de celui que vous conseille par défaut, et celui dont je vais vous parler ci-dessous.
+						</p>
+
+						<h5>KeePass</h5>
+						<p>
+							La force principale de KeePass est qu'il s'agit d'une solution OpenSource.
+						</p>
+						<ul>
+							<li>La confiance</li>
+								<ul>
+									<li>Contrairement à aux applications privées, vous êtes certains quant à quel code tourne vraiment, ce n'est pas une boite noire où vous devez "faire confiance" à la société qui produit l'application</li>
+									<li>Comme il s'agit d'un projet communautaire, vous ne risquez pas qu'une société essaie de vous la mettre par derrière, tente de vous vendre d'autres produits, vende vos données, etc.</li>
+								</ul>
+							<li>La stabilité dans le futur; comme il s'agit d'un projet communautaire, il n'y a pas de société qui risque de partir en faillite derrière</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="textContentContainer">
+					<span id="howToUse"></span>
+					<div class="textContentTitle">Comment utiliser</div>
+					<div class="textContent">
+						<p> Soon TM</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+        <!-- Footer -->
+		<div class="padding"></div>
+
+		<div class="footer mt-auto py-3 bg-dark ">
+			<div class="container text-center">
+				<span class="text-light"> Made By Aekami</span>
+			</div>
+		</div>
+		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+
+
+</html>
