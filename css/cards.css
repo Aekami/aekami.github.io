@@ -1,0 +1,80 @@
+
+:root{
+    --card-bg-color : white;
+    --card-text-content : black;
+    --card-bg-title : #212529;
+    --card-text-title : var(--text-primary);
+    --card-horizontal-divider : #555555;
+    --card-text-border :black;
+    --card-border-hover :grey;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    flex-wrap: wrap;
+    height: fit-content;
+    /* border: 1px dotted red */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    color: var(--card-text-content);
+    flex: 1 1 calc(25% - 1rem);
+    max-width: 20rem;
+    max-height: 20rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height:fit-content;
+    border: 1px grey solid
+}
+
+.card .card-title{
+    background-color: var(--card-bg-title);
+    color : var(--card-text-title);
+    font-family: var(--text-font);
+    padding : 0.5rem;
+    text-align: center;
+}
+
+.card .card-text-content{
+    background-color: white;
+    padding: 1rem;
+    height: 100%;
+}
+
+.card-text-content.clickable{
+    border: 0.25rem solid var(--card-text-border);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card-text-content.clickable:hover{
+    border-color: var(--card-border-hover);
+}
+
+.card .card-divider{
+    background-color: white;
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.card .card-divider hr{
+    border: none;
+    border-top: 1px solid var(--card-horizontal-divider);
+}
+
+.card .card-buttons{
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap : 0.5rem;
+    flex-wrap: wrap;
+}
+
