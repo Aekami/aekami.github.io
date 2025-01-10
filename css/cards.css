@@ -6,13 +6,17 @@
     --card-text-title : var(--text-primary);
     --card-horizontal-divider : #555555;
     --card-text-border :black;
+    --card-border-hover :cyan;
+}
+
+body.light-mode {
     --card-border-hover :grey;
 }
 
 .cards-container{
     display: flex;
     flex-direction: row;
-    gap:1rem;
+    gap: 1rem;
     flex-wrap: wrap;
     height: fit-content;
     /* border: 1px dotted red */
@@ -44,6 +48,16 @@
     background-color: white;
     padding: 1rem;
     height: 100%;
+}
+
+.clickable{
+    border: 0.125rem solid var(--card-text-border);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.clickable:hover{
+    border-color: var(--card-border-hover);
 }
 
 .card-text-content.clickable{

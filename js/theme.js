@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     themeToggleButton.addEventListener('click', () => {
         if (body.classList.toggle('light-mode')){
-            localStorage.setItem('theme', 'light-mode');  
+            localStorage.setItem('theme', 'light-mode');
         } else {
             localStorage.removeItem('theme');
         }

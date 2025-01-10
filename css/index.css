@@ -29,13 +29,12 @@
     --button-text-disabled : #6C6C6C;
     */
 
-
     /* Fonts */
-    --text-font : "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --text-font :  system-ui, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 body.light-mode {
-    --bg-primary : #FFFFFF;
+    --bg-primary : #faf9f6;
     --bg-secondary : #F5F5F5;
     --bg-raised : #E0E0E0;
 
@@ -60,6 +59,7 @@ body {
     min-height: 100vh;
     color : var(--text-primary);
     background-color: var(--bg-primary);
+    font-family : var(--text-font);
 }
 
 .navbar-container{
@@ -89,10 +89,6 @@ body {
     min-height: 100vh;
 }
 
-.left-content:hover{
-    border-color: var(--border-hover);
-}
-
 .hide-left .left-content{
     visibility: hidden;
 }
@@ -109,10 +105,6 @@ body {
     border-radius: 0.25rem;
 }
 
-.main-content:hover{
-    border-color: var(--border-hover);
-}
-
 .right-content{
     flex:2;
     padding: 1rem;
@@ -123,10 +115,6 @@ body {
     min-height: 100vh;
 }
 
-.right-content:hover{
-    border-color: var(--border-hover);
-}
-
 .hide-right .right-content{
     visibility: hidden;
 }
@@ -135,4 +123,29 @@ body {
     background-color: var(--bg-primary);
     padding: 1rem;
     text-align: center;
+}
+
+.bannerContent {
+    padding: 1rem;
+    border: 1px rgba(0, 0, 0, 20%) solid;
+    border-radius: 0.3rem;
+    background-color: rgba(27, 27, 27, 0.05);
+}
+
+.textContentContainer{
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.textContentTitle{
+    background-color: #212529;
+    color : var(--text-primary);
+    padding: 0.5rem;
+}
+
+.textContent {
+    padding-top: 0;
+    padding : 1rem;
+    border-radius: 0.5rem;
 }
