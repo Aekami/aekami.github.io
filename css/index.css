@@ -5,11 +5,14 @@
     --bg-secondary : #1E1E1E;/* containers or sections */
     --bg-raised : #252525; /* raised elements */
     /* --bg-secondary-hover : #292929; */
+    --bg-text-content : #212529;
 
     /* Text colors */
     --text-primary : #E0E0E0;
     --text-secondary : #B0B0B0;
     --text-disabled : #757575;
+    --text-content-title : #FFFFFF;
+    
 
     /* Borders */
     --border-primary : #3C3C3C;
@@ -37,6 +40,7 @@ body.light-mode {
     --bg-primary : #faf9f6;
     --bg-secondary : #F5F5F5;
     --bg-raised : #E0E0E0;
+    --bg-text-content : #faf9f6;
 
     --text-primary : #000000;
     --text-secondary : #555555;
@@ -139,13 +143,32 @@ body {
 }
 
 .textContentTitle{
-    background-color: #212529;
-    color : var(--text-primary);
+    background-color: rgba(12, 12, 12, 0.8);
+    color : var(--text-content-title);
     padding: 0.5rem;
 }
 
+.textContentSubTitle{
+    font-size: large;
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+
 .textContent {
-    padding-top: 0;
+    background-color: var(--bg-text-content);
     padding : 1rem;
+    padding-top: 0;
     border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.summary .textContentTitle{
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.summaryContent{
+    border: 1px solid var(--border-secondary);
 }
