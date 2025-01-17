@@ -1,0 +1,94 @@
+
+.navbar{
+    /* border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between; /* Horizontally */
+    padding : 0.5rem;
+    border-radius: 0.5rem;
+    /* background-color: var(--bg-secondary); */
+    border : 1px solid var(--border-secondary)
+}
+
+.logo{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center; /* Verticlaly */
+    justify-content: center; /* Horizontally */
+    padding : 0.5rem;
+}
+
+.navbar ul{
+    /* border : 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Verticlaly */
+    justify-content: center; /* Horizontally */
+    margin: 0;
+    padding : 0; /* To remove the space to the left that was occupied by the dot before */
+    list-style-type: none;
+    gap : 1rem;
+    flex-wrap: wrap; /* Allows items to wrap onto a new line */
+    max-width: 80%;
+}
+
+.navbar ul li{
+    /* border : 1px solid cyan; */
+    padding : 0.5rem;
+}
+
+.navbar ul li:hover{
+    background-color: var(--bg-raised);
+}
+
+.nav-item .nav-link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: var(--text-font);
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+.nav-item a:link {
+    color: var(--text-primary);
+}
+.nav-item a:visited {
+    color: var(--text-secondary);
+}
+
+.navbar-right{
+    /* border : 1px solid pink; */
+    display: flex;
+    align-items: center; /* Verticlaly */
+    justify-content: flex-end; /* Horizontally */
+}
+
+.navbar-right button {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-secondary);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: var(--text-font);
+    height: 100%;
+}
+
+.navbar-right button:hover {
+    background-color: var(--bg-raised);
+    border-color: var(--border-hover);
+}
+
+.navbar .nav-item {
+    background-color: var(--bg-primary);
+    width: fit-content;
+    text-align: center;
+    /* padding: 0.5rem 1rem;*/
+    border-radius: 0.25rem;
+    cursor: pointer;
+}

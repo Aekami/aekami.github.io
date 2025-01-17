@@ -5,17 +5,17 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../../css/index.css">
-        <link rel="stylesheet" href="../../css/navbar.css">
-        <link rel="stylesheet" href="../../css/cards.css">
+        <link rel="stylesheet" href="../../css/navbar2.css">
     </head>
 	<body>
         <!-- NavBar -->
-		<div class="navbar-container">
-			<div class="navbar">
-				<ul>
-					<li class="nav-item"> <button> <a class="nav-link" href="../../index.html">Home</a> </button> </li>
-				</ul>
-				<div class="navbar-right"> <button id="theme-toggle">Swap theme</button> </div>
+		<div class="navbar">
+			<div class="logo"> Aekami </div>
+			<ul>
+				<li class="nav-item" onclick="(window.location.href='../../index.html')"> <a class="nav-link">Home</a></li>
+			</ul>
+			<div class="navbar-right"> 
+				<button onclick="swapTheme()">Swap theme</button>
 			</div>
 		</div>
   
@@ -38,7 +38,7 @@
 					<span id="uBlockOrigin"></span>
 					<div class="textContentTitle">uBlock origin</div>
 					<div class="textContent">
-						<h3>Le seul adblocker en lequel vous pouvez avoir confiance</h3>
+						<div class="textContentSubTitle">Le seul adblocker en lequel vous pouvez avoir confiance</div>
 						<p> Contrairement à la vaste majorité des pseudo-bloqueurs de pubs, uBlock Origin est <b>open source</b> et gèré par la communauté. Ceci évite en très grande partie les dérives.</p>
 						<p> 
 							Quelle dérives ? Eh bien, vous connaissez évidemment AdBlock (ou AdBlock plus), le premier du nom. Alors pourquoi celui-ci n'est-il plus recommandé aujourd'hui ?  
@@ -50,7 +50,7 @@
 							De cette trahison ressentie est né le projet uBlock Origin. Cette fois Open Source et gèré par la communauté, afin d'éviter ce genre de comportement.
 						</p>
 						<p>
-							Pour ceux que celà intéresse, entre-temps (et suite au backlash et à la mauvaise presse que celà avait généré à l'époque) AdBlock+ a rédigé un guide de ce qu'ils considèrent être des "pubs acceptables" <a href="https://adblockplus.org/acceptable-ads"> https://adblockplus.org/acceptable-ads </a>
+							Pour ceux que celà intéresse, entre-temps (et suite au backlash et à la mauvaise presse que celà avait généré à l'époque) AdBlock+ a rédigé un guide de ce qu'ils considèrent être des "pubs acceptables" <a href="https://adblockplus.org/acceptable-ads" target="_blank" rel="noopener noreferrer"> https://adblockplus.org/acceptable-ads </a>
 						</p>
 						<p>
 							Bien que ce soit une autre conversation, si on souhaite pouvoir continuer à utiliser le web de façon gratuite, les publicités sont nécessaires. L'approche d'AdBlock+ est en réalité tout à fait ok.
@@ -78,6 +78,7 @@
 					<span id="bitWarden"></span>
 					<div class="textContentTitle">BitWarden</div>
 					<div class="textContent">
+						<div class="textContentSubTitle"></div>
 						<p>
                             Si vous avez lu mon article sur les <a href="../cybersec/pwd-manager.html">gestionnaires de mots de passe</a> ce n'est pas une surprise : BitWarden est le gestionnaire que je recommande pour les particuliers.
 						</p>
@@ -92,6 +93,7 @@
 					<span id="darkreader"></span>
 					<div class="textContentTitle">Darkreader (Firefox)</div>
 					<div class="textContent">
+						<div class="textContentSubTitle"></div>
 						<p>
                             Vous êtes probablement déjà tombés sur des sites qui n'ont qu'un thème : blanc. Partout. Eh bien DarkReader est une extension qui crée un theme sombre sur les sites qui n'en ont pas. Aussi simple que ça.
 						</p>
@@ -102,6 +104,7 @@
 					<span id="multiAccountContainers"></span>
 					<div class="textContentTitle">Firefox Multi-Account Containers</div>
 					<div class="textContent">
+						<div class="textContentSubTitle"></div>
 						<p>
                             Pour citer Mozilla eux mêmes :
 						</p>
@@ -122,6 +125,7 @@
 					<span id="firefoxRelay"></span>
 					<div class="textContentTitle">Firefox Relay</div>
 					<div class="textContent">
+						<div class="textContentSubTitle"></div>
 						<p>
 
                         </p>
@@ -132,6 +136,7 @@
 					<span id="honorableMentions"></span>
 					<div class="textContentTitle"> Mentions honorables</div>
 					<div class="textContent">
+						<div class="textContentSubTitle"></div>
 						<ul>
                             <li> DuckDuckGo Privacy Essentials </li>
                             Créé par l'entreprise DuckDuckGo, connue principalement pour son moteur de recherche qui respecte la vie privée des utilisateur (contrairement à, vraiment à tout hasard, Google).
@@ -161,7 +166,6 @@
 		<div class="footer"> Made by Aekami. </div>
 
         <script src="../../js/theme.js"></script>
-        <script src="../../js/routing.js"></script>
     </body>
 
 

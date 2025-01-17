@@ -64,10 +64,7 @@ body {
     color : var(--text-primary);
     background-color: var(--bg-primary);
     font-family : var(--text-font);
-}
-
-.navbar-container{
-    padding: 0.5rem;
+    padding : 1rem;
 }
 
 .main-container{

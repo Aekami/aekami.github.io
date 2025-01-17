@@ -5,18 +5,18 @@
 		<title>Home</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/navbar2.css">
         <link rel="stylesheet" href="./css/cards.css">
     </head>
 	<body>
 		<!-- NavBar -->
-		<div class="navbar-container">
-			<div class="navbar">
-				<ul>
-					<li class="nav-item"> <button> <a class="nav-link" href="./index.html">Home</a> </button> </li>
-					<li class="nav-item"> <button> <a class="nav-link" href="./articles/cybersec/pwd-manager.html">Gestionnaire de MDP</a></button></li>
-				</ul>
-				<div class="navbar-right"> <button id="theme-toggle">Swap theme</button> </div>
+		<div class="navbar">
+			<div class="logo">Aekami </div>
+			<ul>
+				<li class="nav-item"> <a class="nav-link" href="./index.html">Home</a></li>
+			</ul>
+			<div class="navbar-right"> 
+				<button onclick="swapTheme()">Swap theme</button>
 			</div>
 		</div>
   
@@ -26,13 +26,11 @@
 				Left home content
 			</div>
 			<div class="main-content">
-				<h2> Bienvenue sur mon site </h2>
-				<div> 
+				<div style=" display:flex; justify-content: center;">
 					Similaire à un blog, ce site contient des articles sur mes intérets et passions. Cybersec, Dev, Gaming et autres, tant que c'est intéressant. Pour moi. :)
 				</div>
 
 				<div class="cards-container">
-
 					<div class="card">
 						<div class="card-title">
 							WAKFU

@@ -19,6 +19,7 @@ body.light-mode {
     gap: 1rem;
     flex-wrap: wrap;
     height: fit-content;
+    justify-content: center;
     /* border: 1px dotted red */
 }
 
