@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Learning Rust</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../../css/index.css">
+        <link rel="stylesheet" href="../../css/navbar2.css">
+        <link rel="stylesheet" href="../../css/cards.css">
+    </head>
+	<body>
+        <!-- NavBar -->
+		<div class="navbar">
+			<div class="logo">Aekami </div>
+			<ul>
+				<li class="nav-item"> <a class="nav-link" href="../../index.html">Home</a></li>
+			</ul>
+			<div class="navbar-right"> 
+				<button onclick="swapTheme()">Swap theme</button>
+			</div>
+		</div>
+  
+        <!-- Actual content start -->
+		<!-- hide-left hide-right -->
+		<div class="main-container"> 
+
+            <div class="left-content">
+				<!-- Sommaire -->
+                <div class="textContentTitle">Summary</div>
+                    <div class="textContent">
+						<ul>
+							<li></li>
+						</ul>
+                    </div>
+            </div>
+
+            <div class="main-content">
+                <h2>Starting to learn Rust</h2>
+
+				<h3>Why</h3>
+				<p>
+					I was already familiar with high level languages (Java, C#), and with very high level langages (Js), and had some basic understanding of low level langages (C, Assembly).
+					But I had never done any actual project in a low level language, only small programs. The most advanced program(s) being a client-server app in C (not using much premade library, reading them sockets raw >:) ). The "frontend" being the CLI.
+					Also, I wasn't sold on C. I'd likely have prefered C++, but my school was doing C, so C it was.
+				</p>
+				<p>
+					So now that I'm free to pick whatever I want, I went on to look for suitable candidates. My choice was among the following :
+				</p>
+				<ul>
+					<li> C++ - Of course, why not just learn C++ ? It's tested, it's robust, it has very little to prove.</li>
+					<li> Go - Great for concurency, and I was told easier to learn. But I also wanted to be forced to learn the underlying workings of a program (which includes managing memory correctly), and go being a gb-collected language suited that less.</li>
+					<li> Zig - Lots of hype around this one. What made me want to potentially learn it is actually a talk about how one of the Zig developper optimized the language, compiler, etc.</li>
+					<li> Rust - If Zig is hyped, Rust is overhyped. Set out to replace C/C++ over time, and getting adopted more and more, in Google, in Microsoft, etc. It essentially checks my prerequisites of wanting to be forced to understand what's happening, and even better there's a (helpful?) compiler to tell me when I mess up.</li>
+				</ul>
+            </div>
+
+            <div class="right-content">
+                Related articles
+				<ul>
+					<li>  </li>
+				</ul>
+            </div>   
+        </div>
+
+        <!-- Footer -->
+		<div class="padding"></div>
+
+		<div class="footer"> Made by Aekami. </div>
+
+        <script src="../../js/theme.js"></script>
+    </body>
+
+
+</html>

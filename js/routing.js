@@ -4,9 +4,11 @@ const NOT_FOUND_URL = "/404.html";
 
 /* Due to needing to be able to call this locally and not always in a server context, this should really only be called from index.html */
 
+/*** this file should only be called from index.html ***/
 routes.set("home", "./index.html");
 routes.set("pwd-manager","./articles/cybersec/pwd-manager.html");
 routes.set("extensions-browser","./articles/IT/extensions-browser.html");
+routes.set("rust-learning","./articles/rust/learning_rust.html");
 routes.set("404",NOT_FOUND_URL);
 
 

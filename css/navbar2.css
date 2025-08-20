@@ -8,7 +8,8 @@
     padding : 0.5rem;
     border-radius: 0.5rem;
     /* background-color: var(--bg-secondary); */
-    border : 1px solid var(--border-secondary)
+    border : 1px solid var(--border-secondary);
+    backdrop-filter: blur(0.5rem);
 }
 
 .logo{
@@ -31,11 +32,11 @@
     gap : 1rem;
     flex-wrap: wrap; /* Allows items to wrap onto a new line */
     max-width: 80%;
+    border : 1px solid green;
 }
 
 .navbar ul li{
-    /* border : 1px solid cyan; */
-    padding : 0.5rem;
+    border : 1px solid cyan;
 }
 
 .navbar ul li:hover{
@@ -44,7 +45,7 @@
 
 .nav-item .nav-link{
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 2rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;

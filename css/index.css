@@ -137,6 +137,7 @@ body {
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
     overflow: hidden;
+    background-color: var(--bg-text-content);
 }
 
 .textContentTitle{
@@ -152,7 +153,6 @@ body {
 }
 
 .textContent {
-    background-color: var(--bg-text-content);
     padding : 1rem;
     padding-top: 0;
     border-radius: 0.5rem;
