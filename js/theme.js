@@ -1,12 +1,19 @@
+(function initTheme() {
+  const stored = localStorage.getItem('theme'); // 'light' | 'dark' | null
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = stored || (prefersDark ? 'dark' : 'light');
 
-document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        const body = document.body;
-        body.classList.add(savedTheme);
-    }
-});
+  // Apply before paint
+  document.documentElement.setAttribute('data-theme', theme);
+  document.querySelector('meta[name="color-scheme"]') ||
+    document.head.insertAdjacentHTML('beforeend', '<meta name="color-scheme" content="light dark">');
+})();
 
-function swapTheme() {
-    document.body.classList.toggle('light-mode') ? localStorage.setItem('theme', 'light-mode') :  localStorage.removeItem('theme');
+function swapTheme(btn) {
+  const root = document.documentElement;
+  const isDark = root.getAttribute('data-theme') === 'dark';
+  const next = isDark ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  if (btn) btn.setAttribute('aria-pressed', String(next === 'dark'));
 }

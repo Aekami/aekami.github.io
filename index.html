@@ -4,6 +4,18 @@
 		<meta charset="UTF-8">
 		<title>Home</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script>
+			try {
+				const saved = localStorage.getItem('theme');    // 'light' | 'dark' | null
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				const theme = saved ?? (prefersDark ? 'dark' : 'light');
+
+				if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+				document.documentElement.style.colorScheme = theme;
+			} catch (e) { 
+				console.log(JSON.stringify(e))
+			}
+		</script>
 		<link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/navbar2.css">
         <link rel="stylesheet" href="./css/cards.css">
@@ -16,7 +28,7 @@
 				<li class="nav-item"> <a class="nav-link" href="./index.html">Home</a></li>
 			</ul>
 			<div class="navbar-right"> 
-				<button onclick="swapTheme()">Swap theme</button>
+				<button type="button" aria-pressed="false" onclick="swapTheme(this)">Swap theme</button>
 			</div>
 		</div>
   
@@ -74,8 +86,6 @@
 		</div>
 		
 		<!-- Footer -->
-		<div class="padding"></div>
-
 		<div class="footer"> Made by Aekami. </div>
 	
 		<script src="./js/routing.js"></script>
