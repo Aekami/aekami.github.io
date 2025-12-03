@@ -1,6 +1,14 @@
-# So apparently Github pages actually use Jekyll to automagically make static content out of md files ? 
+# A semi-random assortment of subjects I'm interested in.
 
 ## All subjects
 
-[Which Linux to pick](Articles/Linux/which_distro.md)
-[Rust](Articles/Rust/rust_overview.md)
+- [Which Linux to pick](Articles/Linux/which_distro.md)
+- [Rust](Articles/Rust/rust_overview.md)
+
+
+### Some tests 
+> :warning: **Warning:** Do not push the big red button.
+
+> :memo: **Note:** Sunrises are beautiful.
+
+> :bulb: **Tip:** Remember to appreciate the little things in life.
