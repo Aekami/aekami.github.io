@@ -7,8 +7,8 @@
 
 
 ### Some tests 
-> :warning: **Warning:** Do not push the big red button.
+> ⚠️**Warning:** Do not push the big red button.
 
-> :memo: **Note:** Sunrises are beautiful.
+> 📝 **Note:** Sunrises are beautiful.
 
-> :bulb: **Tip:** Remember to appreciate the little things in life.
+> 💡 **Tip:** Remember to appreciate the little things in life.
